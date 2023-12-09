@@ -1,14 +1,14 @@
-import { UserProfile } from 'components/Profile/Profile';
-import user from 'JSON/user.json';
+import { UserProfile } from 'components/profile/profile';
+import user from 'json/user.json';
 
-import { UserStatistic } from 'components/Statistic/Statistic';
-import data from 'JSON/data.json';
+import { UserStatistic } from 'components/statistic/statistic';
+import data from 'json/data.json';
 
-import { Friends } from './Friend-list/Friends';
-import friends from 'JSON/friends.json';
+import { Friends } from './friend-list/friends';
+import friends from 'json/friends.json';
 
-import { TransactionHistoryUser } from 'components/Transaction/Transaction';
-import  transaction from 'JSON/transactions.json';
+import { TransactionHistoryUser } from 'components/transaction/transaction';
+import  transaction from 'json/transactions.json';
 
 export const App = () => {
   return (
@@ -20,7 +20,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <UserStatistic title="Statistic" stats={data} />
+      <UserStatistic title="statistic" stats={data} />
       <Friends friends={friends} />
       <TransactionHistoryUser items={transaction}/>
     </>
